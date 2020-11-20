@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Title</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <nav class="nav">
+            <div class="container">
+                <div class="logo">
+                    <a href="#">OtakuLand</a>
+                </div>
+                <div id="mainListDiv" class="main_list">
+                    <ul class="navlinks">
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contactez-Nous</a></li>
+                    </ul>
+                </div>
+                <span class="navTrigger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </span>
+            </div>
+        </nav>
+        
+        <section class="home">
+        </section>
+        <div style="height: 1000px">
+            <div style="height: 300px">
+                <h2 class="myH2">A propos de nous</h2>
+                    <p class="myP">
+                    OtakuLand est un site français qui permet aux clients de 
+                    commander des produits dérivés animé et des mangas en toute simplicité. 
+                    notre mission est de révolutionner le secteur relier à l'animation japonaise,en respectant
+                    trois promesses : une expérience simple, de qualité et avec notre engagement le plus total.
+                </p>
+            </div>
+            <div style="height: 500px">
+                <h2 class="myH2">Information de contact</h2>
+                    <p class="myP">
+                    <b>Adresse :</b> 20 Rue d'Alsace, 75017 Levallois-Perret<br><br>
+                    <b>Télephone :</b> 06 XX XX XX XX ou 01 XX XX XX XX<br><br>
+                    <b>Mail :</b> service@otakuland.fr<br><br>
+                </p>
+            </div>
+            <div style="height: 500px">
+                <div class="mapouter">
+                    <div class="gmap_canvas">
+                        <iframe width="800" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=20%20Rue%20d'Alsace%2C%2075017%20Levallois-Perret&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Jquery needed -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
+        
+        <!-- Function used to shrink nav bar removing paddings and adding black background -->
+        <script>
+            $(window).scroll(function() {
+                if ($(document).scrollTop() > 50) {
+                    $('.nav').addClass('affix');
+                    console.log("OK");
+                } else {
+                    $('.nav').removeClass('affix');
+                }
+            });
+        </script>
+    </body>
+</html>
+
+
+
